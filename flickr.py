@@ -56,7 +56,7 @@ class Photo:
     def __init__(self, photo_dict):
         self.title = photo_dict['title']
         self.id = photo_dict['id']
-        self.owner = photo_dict['fellert']
+        self.owner = photo_dict['owner_username']
 
     def __str__(self):
         return '{0} by {1}'.format(self.title, self.owner)
